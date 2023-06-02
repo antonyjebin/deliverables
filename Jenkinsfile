@@ -7,12 +7,13 @@ pipeline {
 
   agent any
 
+  stages {
+
     stage('Checkout Source') {
       steps {
-        git credentialsId: 'githublogin', url: 'https://github.com/antonyjebin/deliverables.git'
+        git credentialsId: 'your_credentials_id', url: 'https://github.com/antonyjebin/deliverables.git'
       }
     }
-
 
     stage('Build image') {
       steps{
