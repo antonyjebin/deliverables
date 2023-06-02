@@ -11,7 +11,7 @@ pipeline {
 
     stage('Checkout Source') {
       steps {
-        git credentialsId: 'your_credentials_id', url: 'https://github.com/antonyjebin/deliverables.git'
+        git credentialsId: 'githublogin', url: 'https://github.com/antonyjebin/deliverables.git'
       }
     }
 
