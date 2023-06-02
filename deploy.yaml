@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: sampleapp-container
-          image: antonyjebinraj/deliverables:sampleapp
+          image: antonyjebinraj/nodeapp:latest
           ports:
             - containerPort: 3000
